@@ -1,0 +1,17 @@
+word=input("Write your friend's name: ")
+word=word[:]
+print("This is the first letter of your friend's name",word[0],"Super!")
+
+word=input("Write your friend's name: ")
+while word==word[:]:
+    print(f"This is the first letter of your friend's name {word[0]} Super!!")
+    word=word[0:1]
+    break
+
+word=input("Write your friend's name: ")
+
+if len(word)>0:
+    elem=word[0]
+    print(f"This is the first letter of your friend's name {elem} Super!!!")
+else:
+    print("Friend")
